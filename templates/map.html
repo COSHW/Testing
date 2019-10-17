@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS=false; L_NO_TOUCH=false; L_DISABLE_3D=false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+    <style>#map_575a7bdf6e3548ee9c18110d2e55dca7 {
+        position: relative;
+        width: 100.0%;
+        height: 100.0%;
+        left: 0.0%;
+        top: 0.0%;
+        }
+    </style>
+</head>
+<body>    
+    
+    <div class="folium-map" id="map_575a7bdf6e3548ee9c18110d2e55dca7" ></div>
+</body>
+<script>    
+    
+    
+        var bounds = null;
+    
+
+    var map_575a7bdf6e3548ee9c18110d2e55dca7 = L.map(
+        'map_575a7bdf6e3548ee9c18110d2e55dca7', {
+        center: [55.79, 49.12],
+        zoom: 14,
+        maxBounds: bounds,
+        layers: [],
+        worldCopyJump: false,
+        crs: L.CRS.EPSG3857,
+        zoomControl: true,
+        });
+
+    
+    
+    var tile_layer_507fcaa058ec4a828e7acb68e3cbba88 = L.tileLayer(
+        'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+        {
+        "attribution": null,
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 0,
+        "noWrap": false,
+        "subdomains": "abc"
+}).addTo(map_575a7bdf6e3548ee9c18110d2e55dca7);
+    
+            var feature_group_b6ef6e174c574a1abb7d2e3823a6c39c = L.featureGroup(
+                ).addTo(map_575a7bdf6e3548ee9c18110d2e55dca7);
+        
+    
+            var circle_marker_1a7c62167f7c403e9a388f2080037d53 = L.circleMarker(
+                [55.792078, 49.12224],
+                {
+  "bubblingMouseEvents": true,
+  "color": "grey",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 6,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(feature_group_b6ef6e174c574a1abb7d2e3823a6c39c);
+            
+    
+            var popup_bfed254f599745b2909b06a38b9b993f = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_a75a064d03874dc2af494ec2eea6e962 = $('<div id="html_a75a064d03874dc2af494ec2eea6e962" style="width: 100.0%; height: 100.0%;">Второй высотный корпус КФУ</div>')[0];
+                popup_bfed254f599745b2909b06a38b9b993f.setContent(html_a75a064d03874dc2af494ec2eea6e962);
+            
+
+            circle_marker_1a7c62167f7c403e9a388f2080037d53.bindPopup(popup_bfed254f599745b2909b06a38b9b993f)
+            ;
+
+            
+        
+    
+            var circle_marker_00681d6698d649d6ab8234e7085034c4 = L.circleMarker(
+                [55.790858, 49.121735],
+                {
+  "bubblingMouseEvents": true,
+  "color": "grey",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 6,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(feature_group_b6ef6e174c574a1abb7d2e3823a6c39c);
+            
+    
+            var popup_b5960309d6f046688079f3dc0ac56637 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_1b351c672f264599bb919f98e882242a = $('<div id="html_1b351c672f264599bb919f98e882242a" style="width: 100.0%; height: 100.0%;">Главное здание КФУ</div>')[0];
+                popup_b5960309d6f046688079f3dc0ac56637.setContent(html_1b351c672f264599bb919f98e882242a);
+            
+
+            circle_marker_00681d6698d649d6ab8234e7085034c4.bindPopup(popup_b5960309d6f046688079f3dc0ac56637)
+            ;
+
+            
+        
+    
+            var layer_control_619dac5b030341b399d5ee779697d682 = {
+                base_layers : { "openstreetmap" : tile_layer_507fcaa058ec4a828e7acb68e3cbba88, },
+                overlays : { "Университеты Казани" : feature_group_b6ef6e174c574a1abb7d2e3823a6c39c, }
+                };
+            L.control.layers(
+                layer_control_619dac5b030341b399d5ee779697d682.base_layers,
+                layer_control_619dac5b030341b399d5ee779697d682.overlays,
+                {position: 'topright',
+                 collapsed: true,
+                 autoZIndex: true
+                }).addTo(map_575a7bdf6e3548ee9c18110d2e55dca7);
+            
+        
+</script>
